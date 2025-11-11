@@ -1,0 +1,390 @@
+2025-11-11 01:07:50.258  INFO 36416 --- [main] com.shop.service.log.LogApplication      : No active profile set, falling back to default profiles: default
+2025-11-11 01:07:50.619  INFO 36416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-11 01:07:50.620  INFO 36416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-11 01:07:50.633  INFO 36416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2025-11-11 01:07:50.749  INFO 36416 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=661e58ad-aae1-3e0c-8a7a-09fcf1ee482b
+2025-11-11 01:07:51.016  INFO 36416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8002 (http)
+2025-11-11 01:07:51.021  INFO 36416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 01:07:51.021  INFO 36416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-11-11 01:07:51.022  INFO 36416 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+2025-11-11 01:07:51.022  INFO 36416 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2025-11-11 01:07:51.022  INFO 36416 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2025-11-11 01:07:51.025  INFO 36416 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2025-11-11 01:07:51.137  INFO 36416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 01:07:51.138  INFO 36416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 871 ms
+2025-11-11 01:07:51.180  WARN 36416 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-11-11 01:07:51.180  INFO 36416 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-11-11 01:07:51.185  INFO 36416 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@10e9a5fe
+2025-11-11 01:07:51.568  WARN 36416 --- [main] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2025-11-11 01:07:51.586  WARN 36416 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-11-11 01:07:51.587  INFO 36416 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-11-11 01:07:51.646  INFO 36416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2025-11-11 01:07:51.846  INFO 36416 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2025-11-11 01:07:51.883  INFO 36416 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0f7eeb74-cdf8-4b1e-8166-d42e2eafd6b3
+
+2025-11-11 01:07:51.939 ERROR 36416 --- [main] c.s.x.b.v2.runtime.reflect.opt.Injector  : null
+
+java.security.PrivilegedActionException: null
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:573) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.<clinit>(Injector.java:197) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:81) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.property.SingleElementLeafProperty.<init>(SingleElementLeafProperty.java:92) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:128) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.<init>(ClassBeanInfoImpl.java:181) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:331) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at org.springframework.security.oauth2.http.converter.jaxb.AbstractJaxbMessageConverter.<init>(AbstractJaxbMessageConverter.java:59) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.http.converter.jaxb.JaxbOAuth2ExceptionMessageConverter.<init>(JaxbOAuth2ExceptionMessageConverter.java:21) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.geDefaultMessageConverters(DefaultOAuth2ExceptionRenderer.java:117) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.<init>(DefaultOAuth2ExceptionRenderer.java:53) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.AbstractOAuth2SecurityExceptionHandler.<init>(AbstractOAuth2SecurityExceptionHandler.java:42) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint.<init>(OAuth2AuthenticationEntryPoint.java:36) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer.<init>(ResourceServerSecurityConfigurer.java:62) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration.configure(ResourceServerConfiguration.java:118) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:94) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$$EnhancerBySpringCGLIB$$de958594.init(<generated>) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at com.shop.service.log.LogApplication.main(LogApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NoSuchMethodException: sun.misc.Unsafe.defineClass(java.lang.String,[B,int,int,java.lang.ClassLoader,java.security.ProtectionDomain)
+	at java.base/java.lang.Class.getMethod(Class.java:2227) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector$3.run(Injector.java:201) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector$3.run(Injector.java:197) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	... 70 common frames omitted
+
+2025-11-11 01:07:51.941  WARN 36416 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+2025-11-11 01:07:51.942  INFO 36416 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2025-11-11 01:07:51.942  INFO 36416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-11-11 01:07:51.955  INFO 36416 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-11 01:07:51.965  INFO 36416 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-11-11 01:07:51.967 ERROR 36416 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at com.shop.service.log.LogApplication.main(LogApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:311) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:97) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:87) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.property.SingleElementLeafProperty.<init>(SingleElementLeafProperty.java:92) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:128) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.<init>(ClassBeanInfoImpl.java:181) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:331) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at org.springframework.security.oauth2.http.converter.jaxb.AbstractJaxbMessageConverter.<init>(AbstractJaxbMessageConverter.java:59) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.http.converter.jaxb.JaxbOAuth2ExceptionMessageConverter.<init>(JaxbOAuth2ExceptionMessageConverter.java:21) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.geDefaultMessageConverters(DefaultOAuth2ExceptionRenderer.java:117) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.<init>(DefaultOAuth2ExceptionRenderer.java:53) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.AbstractOAuth2SecurityExceptionHandler.<init>(AbstractOAuth2SecurityExceptionHandler.java:42) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint.<init>(OAuth2AuthenticationEntryPoint.java:36) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer.<init>(ResourceServerSecurityConfigurer.java:62) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration.configure(ResourceServerConfiguration.java:118) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:94) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$$EnhancerBySpringCGLIB$$de958594.init(<generated>) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	... 23 common frames omitted
+
+2025-11-11 02:16:01.799  INFO 47296 --- [main] com.shop.service.log.LogApplication      : No active profile set, falling back to default profiles: default
+2025-11-11 02:16:03.863  INFO 47296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-11 02:16:03.869  INFO 47296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-11 02:16:03.923  INFO 47296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2025-11-11 02:16:04.494  INFO 47296 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=661e58ad-aae1-3e0c-8a7a-09fcf1ee482b
+2025-11-11 02:16:05.650  INFO 47296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8002 (http)
+2025-11-11 02:16:05.675  INFO 47296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 02:16:05.677  INFO 47296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-11-11 02:16:05.679  INFO 47296 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+2025-11-11 02:16:05.680  INFO 47296 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2025-11-11 02:16:05.681  INFO 47296 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2025-11-11 02:16:05.692  INFO 47296 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2025-11-11 02:16:06.145  INFO 47296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 02:16:06.148  INFO 47296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4316 ms
+2025-11-11 02:16:06.467  WARN 47296 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-11-11 02:16:06.469  INFO 47296 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-11-11 02:16:06.503  INFO 47296 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7c0df4ab
+2025-11-11 02:16:08.805  WARN 47296 --- [main] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2025-11-11 02:16:09.057  WARN 47296 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-11-11 02:16:09.074  INFO 47296 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-11-11 02:16:09.612  INFO 47296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2025-11-11 02:16:11.266  INFO 47296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2025-11-11 02:16:12.119  INFO 47296 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0a854624-7873-48e2-be4a-b0475663ed00
+
+2025-11-11 02:16:12.967 ERROR 47296 --- [main] c.s.x.b.v2.runtime.reflect.opt.Injector  : null
+
+java.security.PrivilegedActionException: null
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:573) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.<clinit>(Injector.java:197) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:81) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.property.SingleElementLeafProperty.<init>(SingleElementLeafProperty.java:92) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:128) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.<init>(ClassBeanInfoImpl.java:181) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:331) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at org.springframework.security.oauth2.http.converter.jaxb.AbstractJaxbMessageConverter.<init>(AbstractJaxbMessageConverter.java:59) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.http.converter.jaxb.JaxbOAuth2ExceptionMessageConverter.<init>(JaxbOAuth2ExceptionMessageConverter.java:21) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.geDefaultMessageConverters(DefaultOAuth2ExceptionRenderer.java:117) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.<init>(DefaultOAuth2ExceptionRenderer.java:53) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.AbstractOAuth2SecurityExceptionHandler.<init>(AbstractOAuth2SecurityExceptionHandler.java:42) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint.<init>(OAuth2AuthenticationEntryPoint.java:36) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer.<init>(ResourceServerSecurityConfigurer.java:62) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration.configure(ResourceServerConfiguration.java:118) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:94) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$$EnhancerBySpringCGLIB$$429fe8f8.init(<generated>) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at com.shop.service.log.LogApplication.main(LogApplication.java:13) ~[classes/:na]
+Caused by: java.lang.NoSuchMethodException: sun.misc.Unsafe.defineClass(java.lang.String,[B,int,int,java.lang.ClassLoader,java.security.ProtectionDomain)
+	at java.base/java.lang.Class.getMethod(Class.java:2227) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector$3.run(Injector.java:201) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector$3.run(Injector.java:197) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569) ~[na:na]
+	... 70 common frames omitted
+
+2025-11-11 02:16:13.084  WARN 47296 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+2025-11-11 02:16:13.088  INFO 47296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2025-11-11 02:16:13.097  INFO 47296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-11-11 02:16:13.177  INFO 47296 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-11 02:16:13.236  INFO 47296 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-11-11 02:16:13.244 ERROR 47296 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at com.shop.service.log.LogApplication.main(LogApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.reflect.Method.invoke(Object, Object[])" because "com.sun.xml.bind.v2.runtime.reflect.opt.Injector.defineClass" is null
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:311) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.Injector.inject(Injector.java:97) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.AccessorInjector.prepare(AccessorInjector.java:87) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.opt.OptimizedAccessorFactory.get(OptimizedAccessorFactory.java:125) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.reflect.Accessor$GetterSetterReflection.optimize(Accessor.java:402) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.property.SingleElementLeafProperty.<init>(SingleElementLeafProperty.java:92) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.sun.xml.bind.v2.runtime.property.PropertyFactory.create(PropertyFactory.java:128) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.ClassBeanInfoImpl.<init>(ClassBeanInfoImpl.java:181) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getOrCreate(JAXBContextImpl.java:514) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:331) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:139) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1156) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:165) ~[jaxb-impl-2.3.0.1.jar:2.3.0.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:297) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:286) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:409) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662) ~[jaxb-api-2.3.1.jar:2.3.0]
+	at org.springframework.security.oauth2.http.converter.jaxb.AbstractJaxbMessageConverter.<init>(AbstractJaxbMessageConverter.java:59) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.http.converter.jaxb.JaxbOAuth2ExceptionMessageConverter.<init>(JaxbOAuth2ExceptionMessageConverter.java:21) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.geDefaultMessageConverters(DefaultOAuth2ExceptionRenderer.java:117) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.<init>(DefaultOAuth2ExceptionRenderer.java:53) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.AbstractOAuth2SecurityExceptionHandler.<init>(AbstractOAuth2SecurityExceptionHandler.java:42) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint.<init>(OAuth2AuthenticationEntryPoint.java:36) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer.<init>(ResourceServerSecurityConfigurer.java:62) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration.configure(ResourceServerConfiguration.java:118) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:231) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:322) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:94) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$$EnhancerBySpringCGLIB$$429fe8f8.init(<generated>) ~[spring-security-oauth2-2.3.4.RELEASE.jar:na]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:370) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:324) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104) ~[spring-security-config-5.3.6.RELEASE.jar:5.3.6.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	... 23 common frames omitted
+
